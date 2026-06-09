@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------
+# Sentinel-2 Custom Ignore Rules
+# ---------------------------------------------------
+# Ignore all downloaded zipped satellite archives
+*.zip
+
+# Ignore all extracted Sentinel-2 SAFE directories
+*.SAFE/
+
+# Ignore the main data storage folder completely
+DATA/
