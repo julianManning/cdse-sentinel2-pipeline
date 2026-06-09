@@ -22,8 +22,6 @@ This repository begs to differ by offering a modern, stable, and incredibly reso
 ```text
 cdse-sentinel2-pipeline/
 │
-├── env.base.yml                      # Loose environment specs for development
-├── env.lock.yml                      # Fully version-pinned production lockfile
 ├── p00_s2_download_env_setup.ipynb   # Step 0: Turnkey workspace & kernel initialization
 ├── p01_s2_download_pipeline.ipynb    # Step 1: Spatial query, overlap filtering, & threaded download
 ├── p02_s2_download_unzip.ipynb       # Step 2: Automated extraction to structured .SAFE directories
@@ -32,6 +30,8 @@ cdse-sentinel2-pipeline/
 │   └── UNZIP/                        # Target directory for unzipped .SAFE archives
 │
 ├── Tools/                            # Core pipeline backend orchestration engines
+│   ├── env.base.yml                  # Loose environment specs for development
+│   ├── env.lock.yml                  # Fully version-pinned production lockfile
 │   ├── s2_download_env_builder.py    # Conda & Jupyter lifecycle automation script
 │   └── s2_download_helper_utility.py # Spatial parsing, API calling, and multithreading engines
 │
