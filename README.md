@@ -36,9 +36,8 @@ cdse-sentinel2-pipeline/
 │   └── s2_download_helper_utility.py # Spatial parsing, API calling, and multithreading engines
 │
 └── Example/                          # Sample geospatial inputs for out-of-the-box evaluation
-
-
     └── SHP/                          # Target Region of Interest (ROI) vector layers
+```
 
 ## 🚀 Execution Workflow
 
