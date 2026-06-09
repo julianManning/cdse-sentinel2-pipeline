@@ -87,5 +87,5 @@ Open `p02_s2_download_unzip.ipynb`. Run the automated compression cleaner to exp
 * Python: Version 3.11 was used for the asynchronous environment manager.
 * Dependencies: All secondary libraries are managed via the included Tools/env.lock.yml file.
 
-## License
+## 🛡️ License
 This project is open-source and available under the **[MIT License](https://opensource.org/licenses/MIT)**. You are free to use, modify, and distribute this software for personal, academic, or commercial projects.
