@@ -36,4 +36,38 @@ cdse-sentinel2-pipeline/
 │   └── s2_download_helper_utility.py # Spatial parsing, API calling, and multithreading engines
 │
 └── Example/                          # Sample geospatial inputs for out-of-the-box evaluation
+
+
     └── SHP/                          # Target Region of Interest (ROI) vector layers
+
+## 🚀 Execution Workflow
+
+### Step 0: Workspace Initialization
+Open and execute `p00_s2_download_env_setup.ipynb`. The automated runtime manager will:
+
+* Scan for the dedicated `sentinel2` Conda environment.
+
+* Synchronize dependency deltas securely from the version lockfile.
+
+* Link the backend kernel path and register it cleanly into your Jupyter notebook system.
+
+### Step 1: Data Acquisition & Overlap Filtering
+Open `p01_s2_download_pipeline.ipynb` and select your newly minted `Python 3 (Sentinel2)` kernel.
+
+* Input your study area vector dataset path.
+
+* Define temporal ranges and max cloud-cover constraints.
+
+* Configure `min_roi_coverage_frac` (e.g., `0.70` to strictly guarantee that tiles must cover at least 70% of your target ROI boundary).
+
+* Run the pipeline to seamlessly authenticate with CDSE Keycloak and stream parallelized downloads.
+
+### Step 2: Extraction (unzip)
+Open `p02_s2_download_unzip.ipynb`. Run the automated compression cleaner to expand downloaded archives into the standard layout rules mandated by native `.SAFE` geospatial pipelines.
+
+---
+
+## 📋 Requirements
+* Active user credentials on the Copernicus Data Space Ecosystem.
+
+* An existing installation of Miniconda / Anaconda.
