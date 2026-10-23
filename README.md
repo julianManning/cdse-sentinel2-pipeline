@@ -79,7 +79,8 @@ cdse-sentinel2-pipeline/
 ├── p01_s2_download_pipeline.ipynb    # Step 1: Spatial query, overlap filtering, preview & threaded download
 ├── p02_s2_download_unzip.ipynb       # Step 2: Automated extraction to structured .SAFE directories
 │
-├── DATA/                             # Local data vault (ignored by git)
+├── DATA/                             # Local data vault (downloads ignored by git)
+│   ├── SHP/                          # Your study-area ROI shapefiles (committed)
 │   └── S2/<year>/                    # Downloaded .zip archives + CSV download log
 │       └── UNZIP/                    # Target directory for unzipped .SAFE archives
 │
