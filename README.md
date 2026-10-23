@@ -1,5 +1,7 @@
 # 🧑‍💻 cdse-sentinel2-pipeline
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23598342.svg)](https://doi.org/10.5281/zenodo.23598342)
+
 <table align="right">
   <tr>
     <td align="center">
@@ -132,10 +134,10 @@ Open `p02_s2_download_unzip.ipynb`. Run the batch extractor to expand downloaded
 * Storage: Sentinel-2 L1C/L2A tiles are typically ~0.4–1.2 GB each. Use the preview cell's volume estimate before large queries.
 
 ## 🔗 Related
-* **[cdse-sentinel1-pipeline](https://github.com/julianManning/cdse-sentinel1-pipeline)** — the companion workflow for Sentinel-1 SAR (GRD/SLC) products.
+* **[cdse-sentinel1-pipeline](https://github.com/julianManning/cdse-sentinel1-pipeline)** ([DOI: 10.5281/zenodo.23595216](https://doi.org/10.5281/zenodo.23595216)) — the companion workflow for Sentinel-1 SAR (GRD/SLC) products.
 
 ## 📚 Citation & Data Attribution
-* **Citing this software**: use **"Cite this repository"** in the GitHub sidebar (generated from `CITATION.cff`).
+* **Citing this software**: use **"Cite this repository"** in the GitHub sidebar (generated from `CITATION.cff`), or cite the Zenodo archive: **[doi:10.5281/zenodo.23598342](https://doi.org/10.5281/zenodo.23598342)**.
 * **Copernicus data**: products derived from data downloaded with this pipeline should carry the notice *"Contains modified Copernicus Sentinel data [year]"*, as required by the Copernicus Sentinel data licence.
 
 ## 🛡️ License
